@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App DDS - Weg Office</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>App (DSS semanal) de Sorteio de Temas</h1>
+ 
+    
+
+    <!-- Deixo aqui primeira div - sem psc -->
+    <div class="container">
+        <h2>Tema da Semana:</h2>
+        <p id="weekly-theme"></p>
+        <form id="theme-form">
+            <input type="text" id="new-theme" placeholder="Novo tema da semana" required>
+            <input type="submit" value="Atualizar Tema">
+        </form>
+    </div>
+
+    <!-- Deixo aqui space para (--js/:sorteio) -->
+    <div class="container">
+        <button id="draw-button">Sortear Colaborador</button>
+        <div id="selected-employee"></div>
+    </div>
+    <!-- chamada (colaborado Add) -->
+    <div class="container">
+        <h2>Adicionar Novo Colaborador:</h2>
+        <form id="employee-form">
+            <input type="text" id="new-employee" placeholder="Nome do novo colaborador" required>
+            <input type="submit" value="Adicionar Colaborador">
+        </form>
+    </div>
+    <!-- list visual /: add --js -->
+    <div class="container">
+        <h2>Lista de Colaboradores:</h2>
+        <ul id="employees"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+
+<!-- OBS: sem semântica(esboço) -->
+</html>
